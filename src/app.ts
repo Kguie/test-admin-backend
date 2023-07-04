@@ -1,6 +1,5 @@
 import express, { NextFunction, Request, Response, Express } from 'express';
 import morgan from 'morgan';
-import helmet from 'helmet';
 import cors from 'cors';
 import mongoose from 'mongoose';
 
@@ -12,6 +11,7 @@ import quotationsRouter from './routes/quotations';
 import usersRouter from './routes/users';
 
 const cookieParser = require('cookie-parser');
+const helmet = require('helmet')
 
 //dotenv setup
 require('dotenv').config();
